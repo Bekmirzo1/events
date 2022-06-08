@@ -17,7 +17,7 @@
         <div class="header__container _container">
             <div class="header__body">
                 <div class="header__logo">
-                    <a href="" class="header__logo-body">
+                    <a href="index.html" class="header__logo-body _scrolltop">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
@@ -47,14 +47,17 @@
                     </nav>
                 </div>
                 <div class="header__actions">
-                    <div class="header__search">
-                        <a href="" class="header__search-icon">
-                            <img src="img/icons/search.svg" alt="">
+                    <form action="" class="header__search search search_appear">
+                        <a href="" class="search__icon _icon-search">
                         </a>
-                    </div>
+                        <div class="search__input">
+                            <a href="" class="search__icon-mob _icon-search"></a>
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск по мероприятиям"
+                                class="input">
+                        </div>
+                    </form>
                     <a href="" class="header__lk">
-                        <span class="header__lk-icon">
-                            <img src="img/icons/person.svg" alt="">
+                        <span class="header__lk-icon _icon-person">
                         </span>
                         <span class="header__lk-text">
                             Личный кабинет
@@ -71,12 +74,875 @@
     </div>
 </header>
         <!-- *Page -->
-        <main class="page">
+        <main class="page home">
+            <section class="hello">
+                <div class="hello__container _container">
+                    <div class="hello__body">
+                        <div class="hello__image">
+                            <img src="img/fullscreen/map.svg" alt="">
+                        </div>
+                        <div class="hello__content">
+                            <h1 class="hello__title _title" data-da=".hello__container, 1380, 0">
+                                <span class="_title__content">
+                                    <span class="_title__text">
+                                        Портал мероприятий <span class="_no-wrap _dp-block">Краснодарского края</span>
+                                    </span>
+                                </span>
+                            </h1>
+                            <div class="hello__text">
+                                Здесь вы можете посмотреть все мероприятия вашего Муниципального образования. Создание
+                                портала приурочено к 85-летию образования Краснодарского края.
+                            </div>
+                            <div class="hello__row">
+                                <a href="" class="hello__button btn btn_green">
+                                    Смотреть мероприятия
+                                </a>
+                                <div class="hello__items">
+                                    <div class="hello__item">
+                                        <div class="hello__item-num">
+                                            273
+                                        </div>
+                                        <div class="hello__item-text">
+                                            Мероприятий <span class="_no-wrap _dp-block">в месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="hello__item">
+                                        <div class="hello__item-num">
+                                            500
+                                        </div>
+                                        <div class="hello__item-text">
+                                            Запланировано <span class="_dp-block">мероприятий</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="home__main main">
+                <div class="main__container _container">
+                    <div class="main__sections">
+                        <div class="main__section">
+                            <div class="main__section-header">
+                                <h2 class="main__section-title _title">
+                                    <span class="_title__content">
+                                        <span class="_title__text">Мероприятия в вашем городе</span>
+                                    </span>
+                                </h2>
+                                <a href="" class="main__section-all btn btn_green2">
+                                    Все мероприятия
+                                </a>
+                            </div>
+                            <div class="main-events">
+                                <aside class="main-events__aside">
+                                    <form action="" class="main-events__filters filters">
+                                        <h3 class="filters__title _title-item">
+                                            Фильтры
+                                        </h3>
+                                        <div class="filters__search search2">
+                                            <span class="search2__icon _icon-search"></span>
+                                            <input autocomplete="off" type="text" name="form[]" placeholder="Поиск"
+                                                class="input search2__input">
+                                        </div>
+                                        <div class="filters__blocks">
+                                            <div class="filters__block" data-spollers>
+                                                <label class="filters__label">Муниципальный округ</label>
+                                                <div class="filters__spoller spoller-filter">
+                                                    <div class="spoller-filter__title" data-spoller>
+                                                        <span class="spoller-filter__value">Все города и районы</span>
+                                                        <span class="spoller-filter__icon _icon-down"></span>
+                                                    </div>
+                                                    <div class="spoller-filter__content">
+                                                        <div class="spoller-filter__checkboxes">
+                                                            <label class="spoller-filter__checkbox checkbox">
+                                                                <input data-error="Ошибка" class="checkbox__input"
+                                                                    type="checkbox" value="1" name="form[]" checked>
+                                                                <span class="checkbox__text">
+                                                                    <span>
+                                                                        Район 1
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="spoller-filter__checkbox checkbox">
+                                                                <input data-error="Ошибка" class="checkbox__input"
+                                                                    type="checkbox" value="1" name="form[]">
+                                                                <span class="checkbox__text">
+                                                                    Район 2
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="filters__block">
+                                                <label class="filters__label">Категория</label>
+                                                <div class="filters__block-checkboxes">
+                                                    <label class="filters__block-checkbox checkbox">
+                                                        <input data-error="Ошибка" class="checkbox__input"
+                                                            type="checkbox" value="1" name="form[]" checked>
+                                                        <span class="checkbox__text">
+                                                            <span>
+                                                                Администрация
+                                                                <span class="_no-wrap">Краснодарского края</span>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="filters__block-checkbox checkbox">
+                                                        <input data-error="Ошибка" class="checkbox__input"
+                                                            type="checkbox" value="1" name="form[]">
+                                                        <span class="checkbox__text">
+                                                            <span>Муниципальные образования</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="filters__block">
+                                                <label class="filters__label">Категория</label>
+                                                <div class="filters__block-checkboxes">
+                                                    <label class="filters__block-checkbox checkbox">
+                                                        <input data-error="Ошибка" class="checkbox__input"
+                                                            type="checkbox" value="1" name="form[]" checked>
+                                                        <span class="checkbox__text">
+                                                            <span>
+                                                                Бесплатно
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="filters__block-checkbox checkbox">
+                                                        <input data-error="Ошибка" class="checkbox__input"
+                                                            type="checkbox" value="1" name="form[]">
+                                                        <span class="checkbox__text">
+                                                            <span>
+                                                                Для всей семьи
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="main-events__calendar _calendar"></div>
+                                </aside>
+                                <div class="main-events__main">
+                                    <div class="main-events__blocks">
+                                        <div class="main-events__block block-events">
+                                            <div class="block-events__month">
+                                                <span class="block-events__month-text">Март</span>
+                                            </div>
+                                            <div class="block-events__columns _columns">
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/01.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/02.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/03.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/01.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/02.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-events__block block-events">
+                                            <div class="block-events__month">
+                                                <span class="block-events__month-text">Апрель</span>
+                                            </div>
+                                            <div class="block-events__columns _columns">
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/01.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/02.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/03.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/01.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-events__column column">
+                                                    <div class="column__item">
+                                                        <div class="column__image">
+                                                            <a href="" class="column__image-body">
+                                                                <img src="img/column/02.jpg" alt="">
+                                                            </a>
+                                                            <div class="column__image-buttons">
+                                                                <div class="column__image-buttons-list">
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Бесплатно
+                                                                    </span>
+                                                                    <span
+                                                                        class="column__image-button column__image-button_white btn">
+                                                                        Для всей семьи
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="column__content">
+                                                            <a href="" class="column__title _title-item">
+                                                                Видеоэксурсии Музея железных дорог России
+                                                            </a>
+                                                            <ul class="column__data">
+                                                                <li
+                                                                    class="column__data-item column__data-item_time _icon-time">
+                                                                    03.03, 14:30
+                                                                </li>
+                                                                <li
+                                                                    class="column__data-item column__data-item_location _icon-location">
+                                                                    г. Славянск-на-Кубани
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-events__bread bread">
+                                        <div class="bread__body">
+                                            <a href="" class="bread__arrow bread__arrow_left _disabled _icon-left"></a>
+                                            <ul class="bread__list">
+                                                <li class="bread__num _active">
+                                                    <a href="">1</a>
+                                                </li>
+                                                <li class="bread__num">
+                                                    <a href="">2</a>
+                                                </li>
+                                                <li class="bread__num">
+                                                    <a href="">3</a>
+                                                </li>
+                                                <li class="bread__num">
+                                                    <a href="">4</a>
+                                                </li>
+                                                <li class="bread__num bread__num_dotts">
+                                                    <a href="">...</a>
+                                                </li>
+                                                <li class="bread__num">
+                                                    <a href="">22</a>
+                                                </li>
+                                            </ul>
+                                            <a href="" class="bread__arrow bread__arrow_right _icon-right"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__section">
+                            <div class="main__section-header">
+                                <h2 class="main__section-title _title">
+                                    <span class="_title__content">
+                                        <span class="_title__text">Календарь памятных дат</span>
+                                    </span>
+                                </h2>
+                                <a href="" class="main__section-all btn btn_green2">
+                                    Смотреть все
+                                </a>
+                            </div>
+                            <!-- *memorial dates calendar -->
+                            <div class="home__dates dates-home">
+                                <div class="dates-home__slider">
+                                    <div class="dates-home__slider-body swiper">
+                                        <div class="dates-home__wrapper swiper-wrapper">
+                                            <div class="dates-home__slide swiper-slide">
+                                                <div class="row-dates">
+                                                    <div class="row-dates__content">
+                                                        <div class="row-dates__content-main">
+                                                            <h2 class="row-dates__title _title2">
+                                                                <span class="_dp-block">4 марта 1750 года</span> В
+                                                                Крымском районе прошел бой за
+                                                                освобождение
+                                                                135 высоты пятой кавалерийской гвардией
+                                                            </h2>
+                                                            <div class="row-dates__text">
+                                                                Крымский район
+                                                            </div>
+                                                        </div>
+
+                                                        <a href="" class="row-dates__button btn btn_green">
+                                                            Подробнее
+                                                        </a>
+                                                    </div>
+                                                    <div class="row-dates__image">
+                                                        <div class="row-dates__image-body">
+                                                            <img src="img/dates/row.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dates-home__slide swiper-slide">
+                                                <div class="row-dates">
+                                                    <div class="row-dates__content">
+                                                        <div class="row-dates__content-main">
+                                                            <h2 class="row-dates__title _title2">
+                                                                <span class="_dp-block">4 марта 1750 года</span> В
+                                                                Крымском районе прошел бой за
+                                                                освобождение
+                                                                135 высоты пятой кавалерийской гвардией
+                                                            </h2>
+                                                            <div class="row-dates__text">
+                                                                Крымский район
+                                                            </div>
+                                                        </div>
+
+                                                        <a href="" class="row-dates__button btn btn_green">
+                                                            Подробнее
+                                                        </a>
+                                                    </div>
+                                                    <div class="row-dates__image">
+                                                        <div class="row-dates__image-body">
+                                                            <img src="img/dates/row.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dates-home__nav">
+                                        <button class="dates-home__arrow dates-home__arrow_prev _icon-left">
+                                        </button>
+                                        <button class="dates-home__arrow dates-home__arrow_next _icon-right">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__section">
+                            <div class="main__section-header">
+                                <h2 class="main__section-title _title">
+                                    <span class="_title__content">
+                                        <span class="_title__text">Новости Краснодарского края</span>
+                                    </span>
+                                </h2>
+                                <a href="" class="main__section-all btn btn_green2">
+                                    Все Новости
+                                </a>
+                            </div>
+                            <!-- *news -->
+                            <div class="main__news-columns _columns">
+                                <div class="block-events__column column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="" class="column__image-body">
+                                                <img src="img/column/01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__text">
+                                                Детально изучить традиции и обычаи населения Фанагории, охарактеризовать
+                                                его социальный статус, обозреть...
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-events__column column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="" class="column__image-body">
+                                                <img src="img/column/02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__text">
+                                                Детально изучить традиции и обычаи населения Фанагории, охарактеризовать
+                                                его социальный статус, обозреть...
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-events__column column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="" class="column__image-body">
+                                                <img src="img/column/03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__text">
+                                                Детально изучить традиции и обычаи населения Фанагории, охарактеризовать
+                                                его социальный статус, обозреть...
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-events__column column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="" class="column__image-body">
+                                                <img src="img/column/01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__text">
+                                                Детально изучить традиции и обычаи населения Фанагории, охарактеризовать
+                                                его социальный статус, обозреть...
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-events__column column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="" class="column__image-body">
+                                                <img src="img/column/02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__text">
+                                                Детально изучить традиции и обычаи населения Фанагории, охарактеризовать
+                                                его социальный статус, обозреть...
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-events__column column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="" class="column__image-body">
+                                                <img src="img/column/03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__text">
+                                                Детально изучить традиции и обычаи населения Фанагории, охарактеризовать
+                                                его социальный статус, обозреть...
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+        <section class="registr">
+    <h2 class="registr__title _title2">
+        <div class="_container">
+            Будьте в курсе новых мероприятий
+        </div>
+    </h2>
+    <div class="registr__body">
+        <div class="_container">
+            <form action="" class="registr__form form">
+                <div class="registr__input form__input">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input">
+                </div>
+                <div class="registr__input form__input">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Электронная почта" class="input">
+                </div>
+                <div class="registr__input form__input">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Номер телефона"
+                        class="input _phone">
+                </div>
+                <button class="registr__button btn btn_green">
+                    Подписаться на рассылку
+                </button>
+            </form>
+            <div class="registr__policy">
+                Подписываясь на рассылку вы соглашаетесь с
+                <a href="">политикой конфиденциальности</a>
+                сайта
+            </div>
+        </div>
+        <div class="registr__bg">
+            <img src="img/registr-bg.svg" alt="">
+        </div>
+    </div>
+</section>
         <!-- *footer -->
         <footer class="footer">
     <div class="footer__container _container">
-        
+        <div class="footer__body">
+            <div class="footer__logo">
+                <a href="index.html" class="footer__logo-body _scrolltop">
+                    <img src="img/logo-white.png" alt="">
+                </a>
+            </div>
+            <div class="footer__main">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="">Мероприятия</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="">Памятные даты</a>
+                    </li>
+                </ul>
+                <ul class="footer__formalities">
+                    <li class="footer__formality footer__formality_rights">
+                        <span>© 2022, Администрация Краснодарского края.</span>
+                        <span class="_no-wrap">Все права защищены</span>
+                    </li>
+                    <li class="footer__formality footer__formality_privacy">
+                        <a href="">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li class="footer__formality footer__formality_maden">
+                        <p>
+                            <span>Сделано в</span>
+                            <a href="">
+                                design&code
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bg">
+        <img src="img/footer-bg.svg" alt="">
     </div>
 </footer>
     </div>

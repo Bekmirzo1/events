@@ -3104,6 +3104,14 @@ textarea.input {
 .registr__button {
   white-space: nowrap;
 }
+@media (any-hover: hover) {
+  .registr__button {
+    transition: all 0.3s ease 0s;
+  }
+  .registr__button:hover {
+    color: #009643;
+  }
+}
 .registr__policy {
   font-size: 14px;
   line-height: 17px;

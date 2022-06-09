@@ -2972,6 +2972,7 @@ textarea.input {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
   margin: 0px 0px 20px 0px;
 }
 @media (max-width: 767.98px) {
@@ -2981,6 +2982,9 @@ textarea.input {
 }
 .adapt-aside-events__item:not(:last-child) {
   margin: 0px 10px 0px 0px;
+}
+.adapt-aside-events__item_static {
+  position: static;
 }
 .adapt-aside-events__icon {
   width: 30px;

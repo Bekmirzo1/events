@@ -34,6 +34,11 @@
         justify-self: start;
         align-self: start;
     }
+
+    .form_2 {
+        max-width: 625px;
+        margin-left: auto;
+    }
 </style>
 
 <body>
@@ -145,6 +150,70 @@
                             data-error="Ошибка" class="input"></textarea>
                     </div>
                 </form>
+                <form class="form form_2">
+                    <div class="form__rows">
+                        <div class="form__row">
+                            <div class="form__content">
+                                <div class="form__content-header">
+                                    <label for="" class="form__content-label form__label">
+                                        Обложка
+                                    </label>
+                                    <span class="form__content-prompt">
+                                        горизонтальное фото
+                                    </span>
+                                </div>
+                                <label for="file-cover" class="form__button-load btn btn_green3">
+                                    Загрузить фото
+                                </label>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__file file">
+                                    <input autocomplete="off" id="file-cover" type="file" name="form[]"
+                                        class="file__input">
+                                    <div class="file__view">
+                                        <span class="file__icon file__icon_gallery">
+                                            <img src="img/icons/gallery.svg" alt="">
+                                        </span>
+                                        <div class="file__image">
+                                            <div class="file__image-body">
+                                                <img src="img/blocks/block1.jpg" alt="">
+                                            </div>
+                                            <span class="file__icon file__icon_trash">
+                                                <img src="img/icons/trash.svg" alt="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="file__content">
+                                        <span class="file__name">
+                                            ...photo_2022-11-0.jpg
+                                        </span>
+                                        <span class="file__remove">
+                                            Удалить
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__content">
+                                <div class="form__content-header">
+                                    <label for="" class="form__content-label form__label">
+                                        Название
+                                    </label>
+                                    <span class="form__content-prompt">
+                                        до 50 символов
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form__line">
+                                <div class="form__input">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                        placeholder="Название места" class="input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
                 <!-- <div>
                     <div class="calendar"></div>
                 </div> -->
@@ -249,10 +318,9 @@
                     </div>
                 </div>
             </div>
-    </div>
-    </main>
-    <!-- *footer -->
-    <footer class="footer">
+        </main>
+        <!-- *footer -->
+        <footer class="footer">
     <div class="footer__container _container">
         <div class="footer__body">
             <div class="footer__logo">

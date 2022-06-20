@@ -4385,6 +4385,14 @@ textarea.input {
     margin: 40px 0px 0px 0px;
   }
 }
+.plan__rows {
+  margin: 100px 0px 0px 0px;
+}
+@media (max-width: 767.98px) {
+  .plan__rows {
+    margin: 0px 0px 0px 0px;
+  }
+}
 .plan__row {
   display: flex;
   border-bottom: 1px solid rgba(26, 26, 26, 0.3);
@@ -4468,7 +4476,7 @@ textarea.input {
 @media (max-width: 767.98px) {
   .plan__button-parent {
     flex: 0 0 100%;
-    padding: 5px 0px 0px 0px;
+    padding: px 0px 0px 0px;
   }
 }
 .footer {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Edit pofile</title>
+    <title>Dates</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
@@ -110,7 +110,7 @@
                                         <div class="aside-lk__num _title-item">
                                             234
                                         </div>
-                                        <a href="" class="aside-lk__button btn btn_green">
+                                        <a href="add_event.html" class="aside-lk__button btn btn_green">
                                             Добавить мероприятие
                                         </a>
                                     </div>
@@ -141,7 +141,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-lk__item">
-                                        <a href="lk_dates.html" class="nav-lk__link btn btn_blue">
+                                        <a href="lk_dates.html" class="nav-lk__link btn btn_blue _active">
                                             Памятные даты
                                         </a>
                                     </li>
@@ -152,99 +152,126 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="main-lk__header main-lk__header_2 header-lk">
-                                <h2 class="header-lk__title _title2">
-                                    <span class="header-lk__title-text">
-                                        Редактирование профиля
-                                    </span>
-                                </h2>
+                            <div class="main-lk__header header-lk">
+                                <div class="header-lk__top">
+                                    <h2 class="header-lk__title _title2">
+                                        <span class="header-lk__title-text">
+                                            Памятные даты
+                                        </span>
+                                    </h2>
+                                    <a href="add_date.html" class="header-lk__top-button btn btn_green">
+                                        Добавить дату
+                                    </a>
+                                </div>
+                                <form class="header-lk__bottom">
+                                    <div class="header-lk__search search">
+                                        <a href="" class="search__icon _icon-search"></a>
+                                        <div class="search__input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                placeholder="Поиск по мероприятиям" class="input">
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <form class="main-lk__form form" name="main">
-                                <div class="form__rows">
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    ФИО
-                                                </label>
+                            <div class="main-lk__dates _rows-date">
+                                <div class="row-dates">
+                                    <div class="row-dates__content">
+                                        <div class="row-dates__content-main">
+                                            <h2 class="row-dates__title _title2">
+                                                <span class="_dp-block _no-wrap _pink">4 марта 1750 года</span> В
+                                                Крымском районе прошел бой за
+                                                освобождение
+                                                135 высоты пятой кавалерийской гвардией
+                                            </h2>
+                                            <div class="row-dates__text">
+                                                Крымский район
                                             </div>
                                         </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
+                                        <a href="lk_date.html" class="row-dates__button btn btn_green">
+                                            Подробнее
+                                        </a>
                                     </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    Должность
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    МО
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    E-mail
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    Пароль
-                                                </label>
-                                                <span class="form__content-prompt">
-                                                    минимум 8 символов
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input form__input_icon form__input_password">
-                                                <input autocomplete="off" type="password" name="form[]"
-                                                    data-error="Ошибка" placeholder="" class="input" minlength="8">
-                                                <span class="form__icon form__eye _icon-eye"></span>
-                                            </div>
+                                    <div class="row-dates__image">
+                                        <div class="row-dates__image-body">
+                                            <img src="img/dates/row.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="form__button btn btn_green">
-                                    добавить отчет
-                                </button>
-                            </form>
+                                <div class="row-dates">
+                                    <div class="row-dates__content">
+                                        <div class="row-dates__content-main">
+                                            <h2 class="row-dates__title _title2">
+                                                <span class="_dp-block _no-wrap _pink">4 марта 1750 года</span> В
+                                                Крымском районе прошел бой за
+                                                освобождение
+                                                135 высоты пятой кавалерийской гвардией
+                                            </h2>
+                                            <div class="row-dates__text">
+                                                Крымский район
+                                            </div>
+                                        </div>
+
+                                        <a href="" class="row-dates__button btn btn_green">
+                                            Подробнее
+                                        </a>
+                                    </div>
+                                    <div class="row-dates__image">
+                                        <div class="row-dates__image-body">
+                                            <img src="img/dates/row.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-dates">
+                                    <div class="row-dates__content">
+                                        <div class="row-dates__content-main">
+                                            <h2 class="row-dates__title _title2">
+                                                <span class="_dp-block _no-wrap _pink">4 марта 1750 года</span> В
+                                                Крымском районе прошел бой за
+                                                освобождение
+                                                135 высоты пятой кавалерийской гвардией
+                                            </h2>
+                                            <div class="row-dates__text">
+                                                Крымский район
+                                            </div>
+                                        </div>
+
+                                        <a href="" class="row-dates__button btn btn_green">
+                                            Подробнее
+                                        </a>
+                                    </div>
+                                    <div class="row-dates__image">
+                                        <div class="row-dates__image-body">
+                                            <img src="img/dates/row.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-lk__bread bread">
+                                <div class="bread__body">
+                                    <a href="" class="bread__arrow bread__arrow_left _disabled _icon-left"></a>
+                                    <ul class="bread__list">
+                                        <li class="bread__num _active">
+                                            <a href="">1</a>
+                                        </li>
+                                        <li class="bread__num">
+                                            <a href="">2</a>
+                                        </li>
+                                        <li class="bread__num">
+                                            <a href="">3</a>
+                                        </li>
+                                        <li class="bread__num">
+                                            <a href="">4</a>
+                                        </li>
+                                        <li class="bread__num bread__num_dotts">
+                                            <a href="">...</a>
+                                        </li>
+                                        <li class="bread__num">
+                                            <a href="">22</a>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="bread__arrow bread__arrow_right _icon-right"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

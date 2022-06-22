@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Edit pofile</title>
+    <title>Report</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
@@ -110,7 +110,7 @@
                                         <div class="aside-lk__num _title-item">
                                             234
                                         </div>
-                                        <a href="" class="aside-lk__button btn btn_green">
+                                        <a href="add_event.html" class="aside-lk__button btn btn_green">
                                             Добавить мероприятие
                                         </a>
                                     </div>
@@ -136,7 +136,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-lk__item">
-                                        <a href="lk_reports.html" class="nav-lk__link btn btn_blue">
+                                        <a href="lk_reports.html" class="nav-lk__link btn btn_blue _active">
                                             Отчеты
                                         </a>
                                     </li>
@@ -152,99 +152,187 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="main-lk__header main-lk__header_2 header-lk">
-                                <h2 class="header-lk__title _title2">
-                                    <span class="header-lk__title-text">
-                                        Редактирование профиля
-                                    </span>
-                                </h2>
+                            <div class="main-lk__header header-lk">
+                                <div class="header-lk__top">
+                                    <h2 class="header-lk__title _title2">
+                                        <span class="header-lk__title-text">
+                                            Мои отчеты
+                                        </span>
+                                        <span class="header-lk__title-num">
+                                            (154)
+                                        </span>
+                                    </h2>
+                                    <a href="add_report.html" class="header-lk__top-button btn btn_green">
+                                        Загрузить отчет
+                                    </a>
+                                </div>
+                                <form class="header-lk__bottom">
+                                    <div class="header-lk__search search">
+                                        <a href="" class="search__icon _icon-search"></a>
+                                        <div class="search__input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                placeholder="Поиск по мероприятиям" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="header-lk__spollers" data-spollers data-one-spoller>
+                                        <div class="header-lk__spoller spoller-filter spoller-filter_absolute">
+                                            <div class="spoller-filter__title" data-spoller>
+                                                <span class="spoller-filter__value">По дате добавления</span>
+                                                <span class="spoller-filter__icon _icon-down"></span>
+                                            </div>
+                                            <div class="spoller-filter__content">
+                                                <div class="spoller-filter__options options">
+                                                    <label class="options__item">
+                                                        <input class="options__input" checked type="radio" value="1"
+                                                            name="form[option]">
+                                                        <span class="options__text"><span>Сначала старые</span></span>
+                                                    </label>
+                                                    <label class="options__item">
+                                                        <input class="options__input" type="radio" value="2"
+                                                            name="form[option]">
+                                                        <span class="options__text"><span>Сначала новые</span></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-lk__reset">
+                                        <a href="" class="btn btn_light-green">
+                                            Сбросить фильтры
+                                        </a>
+                                    </div>
+                                </form>
                             </div>
-                            <form class="main-lk__form form" name="main">
-                                <div class="form__rows">
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    ФИО
-                                                </label>
-                                            </div>
+                            <div class="main-lk__columns _columns">
+                                <div class="column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/01.jpg" alt="">
+                                            </a>
                                         </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    Должность
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    МО
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    E-mail
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    Пароль
-                                                </label>
-                                                <span class="form__content-prompt">
-                                                    минимум 8 символов
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input form__input_icon form__input_password">
-                                                <input autocomplete="off" type="password" name="form[]"
-                                                    data-error="Ошибка" placeholder="" class="input" minlength="8">
-                                                <span class="form__icon form__eye _icon-eye"></span>
+                                        <div class="column__content">
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__date">
+                                                3 апреля 2022
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="form__button btn btn_green">
-                                    добавить отчет
-                                </button>
-                            </form>
+                                <div class="column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-lk__bread bread">
+                                <div class="bread__body">
+                                    <a href="" class="bread__arrow bread__arrow_left _disabled _icon-left"></a>
+                                    <ul class="bread__list">
+                                        <li class="bread__num _active">
+                                            <a href="">1</a>
+                                        </li>
+                                        <li class="bread__num">
+                                            <a href="">2</a>
+                                        </li>
+                                        <li class="bread__num">
+                                            <a href="">3</a>
+                                        </li>
+                                        <li class="bread__num">
+                                            <a href="">4</a>
+                                        </li>
+                                        <li class="bread__num bread__num_dotts">
+                                            <a href="">...</a>
+                                        </li>
+                                        <li class="bread__num">
+                                            <a href="">22</a>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="bread__arrow bread__arrow_right _icon-right"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

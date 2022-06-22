@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>lk</title>
+    <title>Reports</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
@@ -78,76 +78,52 @@
             <div class="lk__container _container">
                 <div class="lk__body">
                     <aside class="lk__aside aside-lk">
-                        <div class="aside-lk__body">
-                            <div class="aside-lk__header">
-                                <h2 class="aside-lk__name">
-                                    <span>Соколова</span> <span>Мария</span> <span>Анатольевна</span>
-                                </h2>
-                                <div class="aside-lk__text aside-lk__job">
-                                    Специалист по организации мероприятий Ленинского Муниципального округа
-                                </div>
-                                <div class="aside-lk__place">
-                                    п. Ленинский
-                                </div>
-                            </div>
-                            <div class="aside-lk__main">
-                                <div class="aside-lk__items">
-                                    <div class="aside-lk__item">
-                                        <div class="aside-lk__text aside-lk__item-text">
-                                            Загружено отчётов
-                                        </div>
-                                        <div class="aside-lk__num _title-item">
-                                            154
-                                        </div>
-                                        <a href="" class="aside-lk__button btn btn_green">
-                                            Загрузить отчет
-                                        </a>
-                                    </div>
-                                    <div class="aside-lk__item">
-                                        <div class="aside-lk__text aside-lk__item-text">
-                                            Добавлено мероприятий
-                                        </div>
-                                        <div class="aside-lk__num _title-item">
-                                            234
-                                        </div>
-                                        <a href="add_event.html" class="aside-lk__button btn btn_green">
-                                            Добавить мероприятие
-                                        </a>
-                                    </div>
-                                    <div class="aside-lk__item aside-lk__item_last">
-                                        <a href="profile_editing.html" class="aside-lk__button btn btn_green3">
-                                            Редактировать профиль
-                                        </a>
-                                    </div>
-                                </div>
-                                <a href="" class="aside-lk__logout">
-                                    Выйти
-                                </a>
-                            </div>
-                        </div>
-                    </aside>
+    <div class="aside-lk__body">
+        <div class="aside-lk__header">
+            <h2 class="aside-lk__name">
+                <span>Павлова</span> <span>Александра</span> <span>Александровна</span>
+            </h2>
+            <div class="aside-lk__text aside-lk__job">
+                Сотрудник Администрации Краснодарского края
+            </div>
+        </div>
+        <div class="aside-lk__main">
+            <div class="aside-lk__items">
+                <div class="aside-lk__item aside-lk__item_last">
+                    <a href="profile_admin_editing.html" class="aside-lk__button btn btn_green3">
+                        Редактировать профиль
+                    </a>
+                </div>
+            </div>
+            <a href="" class="aside-lk__logout">
+                Выйти
+            </a>
+        </div>
+    </div>
+</aside>
+
                     <div class="lk__main main main-lk">
                         <div class="main__container _container">
                             <nav class="main-lk__nav nav-lk">
                                 <ul class="nav-lk__list">
                                     <li class="nav-lk__item">
-                                        <a href="lk.html" class="nav-lk__link btn btn_blue _active">
+                                        <a href="admin.html" class="nav-lk__link btn btn_blue">
                                             Мероприятия
                                         </a>
                                     </li>
                                     <li class="nav-lk__item">
-                                        <a href="lk_reports.html" class="nav-lk__link btn btn_blue">
+                                        <a href="admin_reports.html" class="nav-lk__link btn btn_blue _active">
                                             Отчеты
                                         </a>
                                     </li>
                                     <li class="nav-lk__item">
-                                        <a href="lk_dates.html" class="nav-lk__link btn btn_blue">
+                                        <a href="admin_dates.html" class="nav-lk__link btn btn_blue">
                                             Памятные даты
                                         </a>
                                     </li>
                                     <li class="nav-lk__item">
-                                        <a href="lk_plan.html" class="nav-lk__link btn btn_blue">
-                                            План мероприятий
+                                        <a href="admin_regions.html" class="nav-lk__link btn btn_blue">
+                                            Муниципальные округи
                                         </a>
                                     </li>
                                 </ul>
@@ -156,15 +132,12 @@
                                 <div class="header-lk__top">
                                     <h2 class="header-lk__title _title2">
                                         <span class="header-lk__title-text">
-                                            Мои мероприятия
+                                            Отчеты
                                         </span>
                                         <span class="header-lk__title-num">
-                                            (234)
+                                            (2154)
                                         </span>
                                     </h2>
-                                    <a href="add_event.html" class="header-lk__top-button btn btn_green">
-                                        Добавить мероприятие
-                                    </a>
                                 </div>
                                 <form class="header-lk__bottom">
                                     <div class="header-lk__search search">
@@ -197,7 +170,7 @@
                                         </div>
                                         <div class="header-lk__spoller spoller-filter spoller-filter_absolute">
                                             <div class="spoller-filter__title" data-spoller>
-                                                <span class="spoller-filter__value">По статусу</span>
+                                                <span class="spoller-filter__value">Муниципальный округ</span>
                                                 <span class="spoller-filter__icon _icon-down"></span>
                                             </div>
                                             <div class="spoller-filter__content">
@@ -232,185 +205,120 @@
                                 <div class="column">
                                     <div class="column__item">
                                         <div class="column__image">
-                                            <a href="lk_event.html" class="column__image-body">
-                                                <img src="img/column/01.jpg" alt="">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/02.jpg" alt="">
                                             </a>
-                                            <div class="column__image-buttons">
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Бесплатно
-                                                    </span>
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Для всей семьи
-                                                    </span>
-                                                </div>
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_pink btn">
-                                                        Проведено
-                                                    </span>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div class="column__content">
-                                            <a href="lk_event.html" class="column__title _title-item">
-                                                Видеоэксурсии Музея железных дорог России
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
                                             </a>
-                                            <ul class="column__data">
-                                                <li class="column__data-item column__data-item_time _icon-time">
-                                                    03.03, 14:30
-                                                </li>
-                                                <li class="column__data-item column__data-item_location _icon-location">
-                                                    г. Славянск-на-Кубани
-                                                </li>
-                                            </ul>
+                                            <div class="column__date">
+                                                Ленинский Муниципальный округ
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="column__item">
                                         <div class="column__image">
-                                            <a href="" class="column__image-body">
-                                                <img src="img/column/01.jpg" alt="">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/02.jpg" alt="">
                                             </a>
-                                            <div class="column__image-buttons">
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Бесплатно
-                                                    </span>
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Для всей семьи
-                                                    </span>
-                                                </div>
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_pink btn">
-                                                        Проведено
-                                                    </span>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div class="column__content">
-                                            <a href="" class="column__title _title-item">
-                                                Видеоэксурсии Музея железных дорог России
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
                                             </a>
-                                            <ul class="column__data">
-                                                <li class="column__data-item column__data-item_time _icon-time">
-                                                    03.03, 14:30
-                                                </li>
-                                                <li class="column__data-item column__data-item_location _icon-location">
-                                                    г. Славянск-на-Кубани
-                                                </li>
-                                            </ul>
+                                            <div class="column__date">
+                                                Ленинский Муниципальный округ
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="column__item">
                                         <div class="column__image">
-                                            <a href="" class="column__image-body">
-                                                <img src="img/column/01.jpg" alt="">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/02.jpg" alt="">
                                             </a>
-                                            <div class="column__image-buttons">
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Бесплатно
-                                                    </span>
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Для всей семьи
-                                                    </span>
-                                                </div>
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_pink btn">
-                                                        Проведено
-                                                    </span>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div class="column__content">
-                                            <a href="" class="column__title _title-item">
-                                                Видеоэксурсии Музея железных дорог России
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
                                             </a>
-                                            <ul class="column__data">
-                                                <li class="column__data-item column__data-item_time _icon-time">
-                                                    03.03, 14:30
-                                                </li>
-                                                <li class="column__data-item column__data-item_location _icon-location">
-                                                    г. Славянск-на-Кубани
-                                                </li>
-                                            </ul>
+                                            <div class="column__date">
+                                                Ленинский Муниципальный округ
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="column__item">
                                         <div class="column__image">
-                                            <a href="" class="column__image-body">
-                                                <img src="img/column/01.jpg" alt="">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/02.jpg" alt="">
                                             </a>
-                                            <div class="column__image-buttons">
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Бесплатно
-                                                    </span>
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Для всей семьи
-                                                    </span>
-                                                </div>
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_pink btn">
-                                                        Проведено
-                                                    </span>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div class="column__content">
-                                            <a href="" class="column__title _title-item">
-                                                Видеоэксурсии Музея железных дорог России
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
                                             </a>
-                                            <ul class="column__data">
-                                                <li class="column__data-item column__data-item_time _icon-time">
-                                                    03.03, 14:30
-                                                </li>
-                                                <li class="column__data-item column__data-item_location _icon-location">
-                                                    г. Славянск-на-Кубани
-                                                </li>
-                                            </ul>
+                                            <div class="column__date">
+                                                Ленинский Муниципальный округ
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="column__item">
                                         <div class="column__image">
-                                            <a href="" class="column__image-body">
-                                                <img src="img/column/01.jpg" alt="">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/02.jpg" alt="">
                                             </a>
-                                            <div class="column__image-buttons">
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Бесплатно
-                                                    </span>
-                                                    <span class="column__image-button column__image-button_white btn">
-                                                        Для всей семьи
-                                                    </span>
-                                                </div>
-                                                <div class="column__image-buttons-list">
-                                                    <span class="column__image-button column__image-button_pink btn">
-                                                        Проведено
-                                                    </span>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div class="column__content">
-                                            <a href="" class="column__title _title-item">
-                                                Видеоэксурсии Музея железных дорог России
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
                                             </a>
-                                            <ul class="column__data">
-                                                <li class="column__data-item column__data-item_time _icon-time">
-                                                    03.03, 14:30
-                                                </li>
-                                                <li class="column__data-item column__data-item_location _icon-location">
-                                                    г. Славянск-на-Кубани
-                                                </li>
-                                            </ul>
+                                            <div class="column__date">
+                                                Ленинский Муниципальный округ
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="column__item">
+                                        <div class="column__image">
+                                            <a href="lk_report.html" class="column__image-body">
+                                                <img src="img/column/02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="column__content">
+                                            <a href="lk_report.html" class="column__title _title-item">
+                                                Спектакль «Tout paye, или Все оплачено»
+                                            </a>
+                                            <div class="column__date">
+                                                Ленинский Муниципальный округ
+                                            </div>
+                                            <div class="column__date">
+                                                3 апреля 2022
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Edit pofile</title>
+    <title>Add date</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
@@ -141,7 +141,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-lk__item">
-                                        <a href="lk_dates.html" class="nav-lk__link btn btn_blue">
+                                        <a href="lk_dates.html" class="nav-lk__link btn btn_blue _active">
                                             Памятные даты
                                         </a>
                                     </li>
@@ -154,8 +154,9 @@
                             </nav>
                             <div class="main-lk__header main-lk__header_2 header-lk">
                                 <h2 class="header-lk__title _title2">
+                                    <a href="lk_dates.html" class="header-lk__title-back _icon-left"></a>
                                     <span class="header-lk__title-text">
-                                        Редактирование профиля
+                                        Добавление памятной даты
                                     </span>
                                 </h2>
                             </div>
@@ -165,84 +166,155 @@
                                         <div class="form__content">
                                             <div class="form__content-header">
                                                 <label for="" class="form__content-label form__label">
-                                                    ФИО
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    Должность
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    МО
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    E-mail
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    Пароль
+                                                    Обложка
                                                 </label>
                                                 <span class="form__content-prompt">
-                                                    минимум 8 символов
+                                                    горизонтальное фото
+                                                </span>
+                                            </div>
+                                            <label for="file-cover" class="form__button-load btn btn_green3">
+                                                Загрузить фото
+                                            </label>
+                                        </div>
+                                        <div class="form__line">
+                                            <label class="form__file file">
+                                                <input autocomplete="off" id="file-cover" type="file" name="form[]"
+                                                    class="file__input">
+                                                <div class="file__view">
+                                                    <span class="file__icon file__icon_gallery">
+                                                        <img src="img/icons/gallery.svg" alt="">
+                                                    </span>
+                                                    <div class="file__image">
+                                                        <div class="file__image-body">
+                                                            <img src="img/blocks/block1.jpg" alt="">
+                                                        </div>
+                                                        <span class="file__icon file__icon_trash">
+                                                            <img src="img/icons/trash.svg" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="file__content">
+                                                    <span class="file__name">
+                                                        ...photo_2022-11-0.jpg
+                                                    </span>
+                                                    <span class="file__remove">
+                                                        Удалить
+                                                    </span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <div class="form__content">
+                                            <div class="form__content-header">
+                                                <label for="" class="form__content-label form__label">
+                                                    Название
+                                                </label>
+                                                <span class="form__content-prompt">
+                                                    до 50 символов
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="form__line">
-                                            <div class="form__input form__input_icon form__input_password">
-                                                <input autocomplete="off" type="password" name="form[]"
-                                                    data-error="Ошибка" placeholder="" class="input" minlength="8">
-                                                <span class="form__icon form__eye _icon-eye"></span>
+                                            <div class="form__input">
+                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                    placeholder="Название места" class="input" maxlength="50">
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <div class="form__content">
+                                            <div class="form__content-header">
+                                                <label for="" class="form__content-label form__label">
+                                                    Описание
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form__line">
+                                            <div class="form__input form__input_textarea">
+                                                <textarea autocomplete="off" name="form[]"
+                                                    placeholder="Расскажите о мероприятии" class="input"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <div class="form__content">
+                                            <div class="form__content-header">
+                                                <label for="" class="form__content-label form__label">
+                                                    Дата и время
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form__line">
+                                            <div class="form__input form__input_icon form__input_calendar">
+                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                    placeholder="Когда состоится мероприятие" class="input _calendar"
+                                                    readonly>
+                                                <span class="form__icon form__icon_calendar _icon-calendar"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <div class="form__content">
+                                            <div class="form__content-header">
+                                                <label for="" class="form__content-label form__label">
+                                                    Адрес
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form__line">
+                                            <div class="form__input form__input_icon form__input_location">
+                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                    placeholder="Где состоится мероприятие" class="input">
+                                                <span class="form__icon form__icon_location _icon-location"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <div class="form__content">
+                                            <div class="form__content-header">
+                                                <label for="" class="form__content-label form__label">
+                                                    Галерея
+                                                </label>
+                                                <span class="form__content-prompt">
+                                                    до 10 фото или видео
+                                                </span>
+                                            </div>
+                                            <label for="file-cover" class="form__button-load btn btn_green3">
+                                                Загрузить фото
+                                            </label>
+                                        </div>
+                                        <div class="form__line">
+                                            <label class="form__file file">
+                                                <input autocomplete="off" id="file-cover" type="file" name="form[]"
+                                                    class="file__input">
+                                                <div class="file__view">
+                                                    <span class="file__icon file__icon_gallery">
+                                                        <img src="img/icons/gallery.svg" alt="">
+                                                    </span>
+                                                    <div class="file__image">
+                                                        <div class="file__image-body">
+                                                            <img src="img/blocks/block1.jpg" alt="">
+                                                        </div>
+                                                        <span class="file__icon file__icon_trash">
+                                                            <img src="img/icons/trash.svg" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="file__content">
+                                                    <span class="file__name">
+                                                        ...photo_2022-11-0.jpg
+                                                    </span>
+                                                    <span class="file__remove">
+                                                        Удалить
+                                                    </span>
+                                                </div>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                                 <button type="submit" class="form__button btn btn_green">
-                                    добавить отчет
+                                    Добавить мероприятие
                                 </button>
                             </form>
                         </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Edit pofile</title>
+    <title>Report</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
@@ -136,7 +136,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-lk__item">
-                                        <a href="lk_reports.html" class="nav-lk__link btn btn_blue">
+                                        <a href="lk_reports.html" class="nav-lk__link btn btn_blue _active">
                                             Отчеты
                                         </a>
                                     </li>
@@ -154,97 +154,86 @@
                             </nav>
                             <div class="main-lk__header main-lk__header_2 header-lk">
                                 <h2 class="header-lk__title _title2">
+                                    <a href="lk.html" class="header-lk__title-back _icon-left"></a>
                                     <span class="header-lk__title-text">
-                                        Редактирование профиля
+                                        Спектакль «Tout paye, или Все оплачено»
                                     </span>
                                 </h2>
                             </div>
-                            <form class="main-lk__form form" name="main">
-                                <div class="form__rows">
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    ФИО
-                                                </label>
+                            <div class="inner-page">
+                                <div class="inner-page__view">
+                                    <div class="inner-page__slider slider-inner">
+                                        <div class="slider-inner__body swiper">
+                                            <div class="slider-inner__wrapper swiper-wrapper">
+                                                <div class="slider-inner__slide swiper-slide">
+                                                    <div class="slider-inner__image _ibg">
+                                                        <img src="img/blocks/block1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="slider-inner__slide swiper-slide">
+                                                    <div class="slider-inner__image _ibg">
+                                                        <img src="img/blocks/block1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="slider-inner__slide swiper-slide">
+                                                    <div class="slider-inner__image _ibg">
+                                                        <img src="img/blocks/block1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="slider-inner__slide swiper-slide">
+                                                    <div class="slider-inner__image _ibg">
+                                                        <img src="img/blocks/block1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-inner__nav slider-nav">
+                                                <button class="slider-arrow slider-arrow_prev _icon-left"></button>
+                                                <button class="slider-arrow slider-arrow_next _icon-right"></button>
                                             </div>
                                         </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
+                                        <div class="slider-inner__pagination slider-pag"></div>
                                     </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    Должность
-                                                </label>
+                                    <!-- <div class="inner-page__image _ibg">
+                                        <img src="img/blocks/block1.jpg" alt="">
+                                        <div class="inner-page__image-buttons buttons-image">
+                                            <div class="buttons-image__list">
+                                                <span class="buttons-image__button buttons-image__button_white btn">
+                                                    Бесплатно
+                                                </span>
+                                                <span class="buttons-image__button buttons-image__button_white btn">
+                                                    Для всей семьи
+                                                </span>
                                             </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    МО
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    E-mail
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__line">
-                                            <div class="form__input">
-                                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                                    placeholder="" class="input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="form__content">
-                                            <div class="form__content-header">
-                                                <label for="" class="form__content-label form__label">
-                                                    Пароль
-                                                </label>
-                                                <span class="form__content-prompt">
-                                                    минимум 8 символов
+                                            <div class="buttons-image__list">
+                                                <span class="buttons-image__button buttons-image__button_pink btn">
+                                                    Запланировано
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="form__line">
-                                            <div class="form__input form__input_icon form__input_password">
-                                                <input autocomplete="off" type="password" name="form[]"
-                                                    data-error="Ошибка" placeholder="" class="input" minlength="8">
-                                                <span class="form__icon form__eye _icon-eye"></span>
-                                            </div>
+                                    </div> -->
+                                </div>
+                                <div class="inner-page__content">
+                                    <div class="inner-page__header inner-page__header_small">
+                                        <div class="inner-page__note">
+                                            Мероприятие прошло 22 марта в 14.30, п. Белозёрный
                                         </div>
                                     </div>
+                                    <div class="inner-page__text">
+                                        <p>
+                                            На базе парка науки и искусства «Сириус» открыт филиал первого
+                                            специализированного археологического музея в России.
+                                        </p>
+                                        <p>
+                                            Экспозиция составлена по современным канонам и продумана до мелочей:
+                                            каждый посетитель, перемещаясь из зала в зал, постепенно погружается в
+                                            историю Фанагории, благодаря чему складывается целостная картина жизни
+                                            людей в древности. В витринах выставки можно увидеть сакральные
+                                            предметы, расписную посуду, амфоры, терракотовые статуэтки, монеты из
+                                            драгоценных металлов, а также раннехристианские реликвии.
+                                        </p>
+                                    </div>
                                 </div>
-                                <button type="submit" class="form__button btn btn_green">
-                                    добавить отчет
-                                </button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
